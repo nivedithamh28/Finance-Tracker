@@ -1,0 +1,108 @@
+.cat-container {
+    padding: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.cat-header {
+    margin-bottom: 32px;
+}
+
+.cat-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.cat-subtitle {
+    color: #607a94;
+    font-size: 0.95rem;
+}
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+}
+
+.cat-card {
+    background: #0c1220;
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    border-radius: 16px;
+    padding: 24px;
+}
+
+.cat-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.cat-card-title.expense {
+    color: #ef4444;
+    border-color: rgba(239, 68, 68, 0.1);
+}
+
+.cat-card-title.income {
+    color: #00d4c8;
+    border-color: rgba(0, 212, 200, 0.1);
+}
+
+.cat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.cat-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.02);
+    border-radius: 12px;
+    transition: transform 0.2s, background 0.2s;
+}
+
+.cat-item:hover {
+    background: rgba(255, 255, 255, 0.04);
+    transform: translateX(4px);
+}
+
+.cat-icon {
+    font-size: 1.5rem;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 10px;
+}
+
+.cat-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.cat-label {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #e2e8f0;
+}
+
+.cat-value {
+    font-size: 0.75rem;
+    color: #4b5563;
+    font-family: monospace;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 800px) {
+    .cat-grid {
+        grid-template-columns: 1fr;
+    }
+}

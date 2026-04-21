@@ -19,3 +19,64 @@ body {
   min-height: 100vh;
   width: 100%;
 }
+
+/* ── Global UI Components ── */
+
+/* Empty State */
+.empty-state-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  width: 100%;
+}
+
+.empty-state-icon {
+  width: 48px;
+  height: 48px;
+  color: #607a94;
+  margin-bottom: 16px;
+  opacity: 0.8;
+}
+
+.empty-state-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.empty-state-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-bottom: 8px;
+}
+
+.empty-state-description {
+  font-size: 0.9rem;
+  color: #607a94;
+  max-width: 280px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.empty-state-btn {
+  padding: 8px 20px;
+  background: rgba(0, 212, 200, 0.1);
+  color: #00d4c8;
+  border: 1px solid rgba(0, 212, 200, 0.3);
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.empty-state-btn:hover {
+  background: #00d4c8;
+  color: #060c18;
+}
